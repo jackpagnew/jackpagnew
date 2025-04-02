@@ -1,0 +1,132 @@
+<html>
+<head>
+  <title>Jack Agnew</title>
+  <link href="style.css" type=text/css rel=stylesheet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="row1">
+      <div class="topnav">
+        <div class="topnav-center">
+        <a href="index.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="ref.html">References</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+      </div>
+  </div>
+  <div class="row1">
+  <h4>THANK YOU FOR YOUR INTEREST!</h4>
+  <h5>Take a quick second to fill out this form and I'll get back to you as soon as possible!</h5>
+  </div>
+
+<div class="flex-container">
+  <iframe src="https://forms.gle/qpPGyYvwoem5CoqQ7" title="CONTACT FORM" height="500px" width="100%" loading="eager">
+  </iframe>
+</div>
+<!--<div class="flex-container">
+    <h3 class="contactform">CONTACT FORM</h3>
+  <form id="form" action="mailto:jackpagnew@gmail.com" target="_blank" method="post" novalidate>
+    <div class="formparts">
+    Name: <input type="text" name="name">
+    </div>
+  <div class="formparts">
+    Email: <input type="email" name="email">
+  </div>
+  <div class="formparts">
+  Company: <input type="company" name="company">
+</div>
+  <div class="formparts">
+    Message:<textarea name="message" form="form">
+    </textarea>
+    &nbsp;
+  </div>
+  <div class="formparts">
+    <input type="submit" value="Send">
+  </div>
+  </form>
+</div>-->
+
+  <!--<div class="flex-container">
+    <h3 class="contactform">CONTACT FORM</h3>
+  <form id="form" action="contact-form-handler.php" target="_blank" method="post" novalidate>
+    Name: <input type="text" name="name">
+    Email: <input type="email" name="email">
+  Company: <input type="company" name="company">
+    Message:<textarea name="message" form="form">
+    </textarea>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+
+  <script language=”JavaScript”>
+  var frmvalidator = new Validator(“contactform”); frmvalidator.addValidation(“name”,”req”,”Please provide your name”); frmvalidator.addValidation(“email”,”req”,”Please provide your email”); frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”);
+  </script>
+
+<?php
+
+$errors = ”;
+
+$myemail = ‘yourname@website.com’;//<—–Put Your email address here. if(empty($_POST[‘name’]) ||
+
+empty($_POST[’email’]) ||
+
+empty($_POST[‘message’]))
+
+{
+
+$errors .= “\n Error: all fields are required”;
+
+}
+
+$name = $_POST[‘name’];
+
+$email_address = $_POST[’email’];
+
+$message = $_POST[‘message’];
+
+if (!preg_match(
+
+“/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i”, $email_address))
+
+{
+
+$errors .= “\n Error: Invalid email address”;
+
+}
+
+if( empty($errors))
+
+{
+
+$to = $myemail;
+
+$email_subject = “Contact form submission: $name”;
+
+$email_body = “You have received a new message. “.
+
+” Here are the details:\n Name: $name \n “.
+
+“Email: $email_address\n Message \n $message”;
+
+$headers = “From: $myemail\n”;
+
+$headers .= “Reply-To: $email_address”;
+
+mail($to,$email_subject,$email_body,$headers);
+
+//redirect to the ‘thank you’ page
+
+header(‘Location: contact-form-thank-you.html’);
+
+}
+
+?> -->
+
+</body>
+</html>
